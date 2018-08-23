@@ -8,5 +8,7 @@ switchport access vlan 10
 int fa 0/1
 switchport mode access
 switchport access vlan 20
+int gi 0/1
+switchport mode trunk
 do wr
 exit
