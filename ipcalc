@@ -1,0 +1,22 @@
+[root@fed86 /]# ipcalc 192.168.10.0/24 --split=26
+[Split networks]
+Network:        192.168.10.0/26
+Network:        192.168.10.64/26
+Network:        192.168.10.128/26
+Network:        192.168.10.192/26
+
+Total:          4
+Hosts/Net:      62
+[root@fed86 /]# ipcalc 2a03:2880:20:4f06:face:b00c:0:14/64 --split=48
+Cannot subnet to /48 with this base network, use a prefix > /64
+[root@fed86 /]# ipcalc 2a03:2880:20:4f06:face:b00c:0:14/64
+Full Address:   2a03:2880:0020:4f06:face:b00c:0000:0014
+Address:        2a03:2880:20:4f06:face:b00c:0:14
+Full Network:   2a03:2880:0020:4f06:0000:0000:0000:0000/64
+Network:        2a03:2880:20:4f06::/64
+Netmask:        ffff:ffff:ffff:ffff:: = 64
+
+Address space:  Global Unicast
+HostMin:        2a03:2880:20:4f06::
+HostMax:        2a03:2880:20:4f06:ffff:ffff:ffff:ffff
+Hosts/Net:      2^(64) = 18446744073709551616
